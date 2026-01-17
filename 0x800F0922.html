@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Fix 0x80072EFE - FIXERROR.IO</title>
+    <title>How to Fix 0x800F0922 - FIXERROR.IO</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
@@ -41,8 +41,8 @@
             <article class="bg-white rounded-[3rem] shadow-2xl shadow-slate-200/50 border border-slate-100 overflow-hidden">
                 <div class="bg-indigo-600 p-12 text-white">
                     <span class="bg-white/20 text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-widest">Verified Solution</span>
-                    <h1 class="text-4xl md:text-6xl font-black mt-6 mb-4 tracking-tighter break-all italic">Error 0x80072EFE</h1>
-                    <p class="text-indigo-100 font-medium opacity-80 uppercase text-xs tracking-widest tracking-[0.2em]">Network / WinHTTP</p>
+                    <h1 class="text-4xl md:text-6xl font-black mt-6 mb-4 tracking-tighter break-all italic">Error 0x800F0922</h1>
+                    <p class="text-indigo-100 font-medium opacity-80 uppercase text-xs tracking-widest tracking-[0.2em]">CBS / Disk or EFI</p>
                 </div>
 
                 <div class="p-10 md:p-14">
@@ -50,9 +50,7 @@
                         <div class="absolute top-0 left-0 w-2 h-full bg-indigo-500"></div>
                         <h4 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4 italic italic">Analysis & Explanation</h4>
                         <p class="text-slate-700 leading-relaxed font-medium text-lg">
-                            DESC: Windows error 0x80072EFE typically occurs when there's a problem with the Windows Update service or a network connection issue, preventing Windows from downloading or installing updates. This error can also be caused by corrupted system files or outdated Windows Update components.
-
-FIX: net stop wuauserv & net start wuauserv
+                            Windows error 0x800F0922 typically occurs when there's a problem with the Windows Update service or the Windows Store, often due to corrupted system files or issues with the Microsoft Store app.
                         </p>
                     </div>
 
@@ -63,7 +61,7 @@ FIX: net stop wuauserv & net start wuauserv
                         <div class="bg-slate-900 rounded-[2rem] p-8 md:p-10 relative group border-4 border-slate-800">
                             <div class="absolute -top-3 left-8 bg-indigo-500 text-white text-[9px] px-3 py-1 rounded-full font-bold uppercase tracking-widest">PowerShell / CMD</div>
                             <code id="target-cmd" class="text-emerald-400 font-mono text-sm md:text-base leading-relaxed break-all block py-4 italic">
-                                sfc /scannow
+                                DISM /Online /Cleanup-Image /RestoreHealth
                             </code>
                             <button onclick="copyBtn()" class="mt-6 w-full bg-indigo-600 hover:bg-indigo-500 text-white py-5 rounded-2xl font-black transition-all shadow-xl shadow-indigo-500/30 uppercase tracking-widest text-xs active:scale-95">Copy to Clipboard</button>
                         </div>
