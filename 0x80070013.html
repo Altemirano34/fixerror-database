@@ -50,9 +50,9 @@
                         <div class="absolute top-0 left-0 w-2 h-full bg-indigo-500"></div>
                         <h4 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4 italic italic">Analysis & Explanation</h4>
                         <p class="text-slate-700 leading-relaxed font-medium text-lg">
-                            DESC: Windows error 0x80070013 typically occurs when there's a problem with file permissions or access rights, preventing a user from accessing or modifying a file or folder. This error can also be caused by issues with the Windows registry or corrupted system files.
+                            Windows error 0x80070013 typically occurs when there's a problem with file permissions or access rights, preventing Windows from accessing a specific file or folder. This error can also be caused by corrupted system files or registry entries.
 
-FIX: `icacls C:\path\to\file /reset`
+net stop cryptSvc & net stop msdtc & ren C:\Windows\System32\catroot2 catroot2.old & net start cryptSvc & net start msdtc
                         </p>
                     </div>
 

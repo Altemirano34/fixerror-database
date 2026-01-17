@@ -50,9 +50,9 @@
                         <div class="absolute top-0 left-0 w-2 h-full bg-indigo-500"></div>
                         <h4 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4 italic italic">Analysis & Explanation</h4>
                         <p class="text-slate-700 leading-relaxed font-medium text-lg">
-                            DESC: Windows error 0x80070014 typically occurs when there's a problem with the registry or file system permissions, preventing Windows from accessing necessary files or resources. This error can also be caused by corrupted system files or malware.
+                            Windows error 0x80070014 typically occurs when there is a problem with the registry or a file system error, often related to permissions or access rights. This error can also be caused by a corrupted system file or a malfunctioning Windows service.
 
-FIX: `sfc /scannow`
+net stop cryptSvc & net stop msdtc & ren C:\Windows\System32\catroot2 catroot2.old & net start cryptSvc & net start msdtc
                         </p>
                     </div>
 

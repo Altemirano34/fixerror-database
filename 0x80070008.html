@@ -50,9 +50,9 @@
                         <div class="absolute top-0 left-0 w-2 h-full bg-indigo-500"></div>
                         <h4 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4 italic italic">Analysis & Explanation</h4>
                         <p class="text-slate-700 leading-relaxed font-medium text-lg">
-                            DESC: Windows error 0x80070008 typically occurs when the system is unable to access a file or folder due to permissions issues or a corrupted file system. This error can also be caused by a problem with the Windows Registry or a system file.
+                            Windows error 0x80070008 typically occurs when a user account does not have the necessary permissions to access a file or folder, often due to incorrect file ownership or permissions. This error can also be caused by a corrupted system file or a problem with the Windows registry.
 
-FIX: `icacls C:\Windows\System32\drivers\etc\hosts /reset`
+net stop cryptSvc && net stop msdtc && ren C:\Windows\System32\catroot2 catroot2.old && net start cryptSvc && net start msdtc
                         </p>
                     </div>
 

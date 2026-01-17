@@ -50,9 +50,7 @@
                         <div class="absolute top-0 left-0 w-2 h-full bg-indigo-500"></div>
                         <h4 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4 italic italic">Analysis & Explanation</h4>
                         <p class="text-slate-700 leading-relaxed font-medium text-lg">
-                            DESC: Windows error 0x80070024 typically occurs when a user account does not have the necessary permissions to access a file or folder, often due to issues with file ownership or permissions. This error can also be caused by a corrupted file system or a problem with the Windows User Account Control (UAC) settings.
-
-FIX: Takeown /f [path_to_file_or_folder]
+                            Windows error 0x80070024 typically occurs when there is a permission issue or a file system error that prevents Windows from accessing a file or folder. This error can be caused by corrupted system files, incorrect file permissions, or other system issues.
                         </p>
                     </div>
 
@@ -63,7 +61,7 @@ FIX: Takeown /f [path_to_file_or_folder]
                         <div class="bg-slate-900 rounded-[2rem] p-8 md:p-10 relative group border-4 border-slate-800">
                             <div class="absolute -top-3 left-8 bg-indigo-500 text-white text-[9px] px-3 py-1 rounded-full font-bold uppercase tracking-widest">PowerShell / CMD</div>
                             <code id="target-cmd" class="text-emerald-400 font-mono text-sm md:text-base leading-relaxed break-all block py-4 italic">
-                                sfc /scannow
+                                TakeOwnership.exe /id <folder_path>
                             </code>
                             <button onclick="copyBtn()" class="mt-6 w-full bg-indigo-600 hover:bg-indigo-500 text-white py-5 rounded-2xl font-black transition-all shadow-xl shadow-indigo-500/30 uppercase tracking-widest text-xs active:scale-95">Copy to Clipboard</button>
                         </div>

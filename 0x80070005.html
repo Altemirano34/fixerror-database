@@ -50,9 +50,7 @@
                         <div class="absolute top-0 left-0 w-2 h-full bg-indigo-500"></div>
                         <h4 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4 italic italic">Analysis & Explanation</h4>
                         <p class="text-slate-700 leading-relaxed font-medium text-lg">
-                            DESC: Windows error 0x80070005 is a permission-related error that occurs when a user lacks the necessary permissions to access a file, folder, or registry key. This error often appears when trying to install or update software, or when accessing system files.
-
-FIX: TakeOwnership.exe /id <ID>
+                            Windows error 0x80070005 typically occurs when a user account lacks the necessary permissions to access a file or folder, often due to incorrect user account settings or corrupted system files. This error can also be caused by issues with Windows User Account Control (UAC) or file system permissions.
                         </p>
                     </div>
 
@@ -63,7 +61,7 @@ FIX: TakeOwnership.exe /id <ID>
                         <div class="bg-slate-900 rounded-[2rem] p-8 md:p-10 relative group border-4 border-slate-800">
                             <div class="absolute -top-3 left-8 bg-indigo-500 text-white text-[9px] px-3 py-1 rounded-full font-bold uppercase tracking-widest">PowerShell / CMD</div>
                             <code id="target-cmd" class="text-emerald-400 font-mono text-sm md:text-base leading-relaxed break-all block py-4 italic">
-                                sfc /scannow
+                                TakeOwnership.exe /id <folder_path> (replace <folder_path> with the actual path of the folder you're trying to access)
                             </code>
                             <button onclick="copyBtn()" class="mt-6 w-full bg-indigo-600 hover:bg-indigo-500 text-white py-5 rounded-2xl font-black transition-all shadow-xl shadow-indigo-500/30 uppercase tracking-widest text-xs active:scale-95">Copy to Clipboard</button>
                         </div>

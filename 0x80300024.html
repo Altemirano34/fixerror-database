@@ -50,9 +50,9 @@
                         <div class="absolute top-0 left-0 w-2 h-full bg-indigo-500"></div>
                         <h4 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4 italic italic">Analysis & Explanation</h4>
                         <p class="text-slate-700 leading-relaxed font-medium text-lg">
-                            DESC: Windows error 0x80300024 typically occurs when there's a problem with the Windows Store or Microsoft account, preventing users from accessing or downloading apps. This error can be caused by a corrupted Microsoft account or a problem with the Windows Store cache.
+                            Windows error 0x80300024 typically occurs when there's a problem with the Windows Store or Microsoft account, preventing users from accessing or downloading apps. This error can be caused by issues with the account, store cache, or system settings.
 
-FIX: wsreset.exe
+DISM /Online /Cleanup-Image /RestoreHealth
                         </p>
                     </div>
 

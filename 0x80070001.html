@@ -50,9 +50,9 @@
                         <div class="absolute top-0 left-0 w-2 h-full bg-indigo-500"></div>
                         <h4 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4 italic italic">Analysis & Explanation</h4>
                         <p class="text-slate-700 leading-relaxed font-medium text-lg">
-                            DESC: Windows error 0x80070001 is a generic error code that typically indicates a problem with file system access or permissions, often occurring when a user tries to access a file or folder without sufficient permissions. This error can also occur due to issues with the file system, such as corrupted or missing files.
+                            Windows error 0x80070001 typically occurs when a system file or registry entry is corrupted or missing, preventing Windows from accessing the necessary information. This error can also be caused by issues with file permissions or access rights.
 
-FIX: `icacls C:\Path\To\File /reset`
+net stop cryptSvc & net stop msdtc & ren C:\Windows\System32\catroot2 catroot2.old & net start cryptSvc & net start msdtc
                         </p>
                     </div>
 

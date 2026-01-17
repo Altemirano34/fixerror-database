@@ -50,9 +50,9 @@
                         <div class="absolute top-0 left-0 w-2 h-full bg-indigo-500"></div>
                         <h4 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4 italic italic">Analysis & Explanation</h4>
                         <p class="text-slate-700 leading-relaxed font-medium text-lg">
-                            DESC: Windows error 0x80042306 is typically associated with a failed backup or system restore operation, often due to a corrupted system file or a problem with the Volume Shadow Copy Service (VSS). This error can also occur when a system file is in use by another process.
+                            Windows error 0x80042306 typically occurs when a system file or registry entry is corrupted, preventing the Windows Backup service from functioning properly. This error can also be caused by a faulty backup configuration or a hardware issue.
 
-FIX: `vssadmin delete shadows /all`
+chkdsk /f /r
                         </p>
                     </div>
 

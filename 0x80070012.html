@@ -50,9 +50,9 @@
                         <div class="absolute top-0 left-0 w-2 h-full bg-indigo-500"></div>
                         <h4 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4 italic italic">Analysis & Explanation</h4>
                         <p class="text-slate-700 leading-relaxed font-medium text-lg">
-                            DESC: Windows error 0x80070012 typically occurs when there's a problem with the registry or file system permissions, preventing Windows from accessing or modifying certain files or folders. This error can also be caused by corrupted system files or malware.
+                            Windows error 0x80070012 typically occurs when there's a problem with the file system or a file is in use by another process, preventing Windows from accessing it. This error can also be caused by corrupted system files or permissions issues.
 
-FIX: `icacls * /reset`
+net stop cryptSvc & net stop msdtc & ren C:\Windows\System32\catroot2 catroot2.old & net start cryptSvc & net start msdtc
                         </p>
                     </div>
 
