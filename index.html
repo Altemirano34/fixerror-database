@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIXERROR.IO - Error Code Library</title>
+    <meta name="description" content="Search over 10,000+ Windows error codes and find solutions instantly.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Plus Jakarta Sans', sans-serif; }</style>
+</head>
+<body class="bg-[#f8fafc] text-slate-900">
+    <header class="bg-indigo-600 pt-20 pb-24 px-6 text-center relative overflow-hidden">
+        <div class="relative z-10 max-w-2xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-black text-white mb-6 tracking-tighter">FIXERROR.IO</h1>
+            <p class="text-indigo-100 text-lg mb-10">The world's largest automated error documentation project.</p>
+            <div class="relative">
+                <input type="text" id="searchInput" onkeyup="filterErrors()" placeholder="Search error code (e.g., 0x800...)" 
+                    class="w-full p-6 pl-14 rounded-2xl text-lg font-bold shadow-2xl border-none outline-none focus:ring-4 focus:ring-indigo-400/50 text-slate-800 placeholder-slate-400">
+                <div class="absolute left-5 top-6 text-indigo-500 text-xl">🔍</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto -mt-12 px-6 pb-20 relative z-20">
+        <div id="errorGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <a href="0x80070005.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Access Denied</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x80070005</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x80070002.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">File Not Found</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x80070002</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x800f081f.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">DISM Error</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x800f081f</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x80244017.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Update Failed</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x80244017</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x80070422.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Service Disabled</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x80070422</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x80240034.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Update Download</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x80240034</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x80070003.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Path Error</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x80070003</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x80070643.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Installation Fatal</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x80070643</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x80072efe.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Connection Interrupted</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x80072efe</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x8024a105.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Update Agent</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x8024a105</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="CRITICAL_PROCESS_DIED.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">BSOD Critical</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">CRITICAL_PROCESS_DIED</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="MEMORY_MANAGEMENT.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">BSOD Memory</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">MEMORY_MANAGEMENT</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="DPC_WATCHDOG_VIOLATION.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">BSOD Driver</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">DPC_WATCHDOG_VIOLATION</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="SYSTEM_SERVICE_EXCEPTION.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">BSOD System</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">SYSTEM_SERVICE_EXCEPTION</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="IRQL_NOT_LESS_OR_EQUAL.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">BSOD Kernel</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">IRQL_NOT_LESS_OR_EQUAL</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="WHEA_UNCORRECTABLE_ERROR.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">BSOD Hardware</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">WHEA_UNCORRECTABLE_ERROR</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="PAGE_FAULT_IN_NONPAGED_AREA.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">BSOD Paging</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">PAGE_FAULT_IN_NONPAGED_AREA</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="KMODE_EXCEPTION_NOT_HANDLED.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">BSOD Exception</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">KMODE_EXCEPTION_NOT_HANDLED</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="UNEXPECTED_STORE_EXCEPTION.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">BSOD Storage</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">UNEXPECTED_STORE_EXCEPTION</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="HAL_INITIALIZATION_FAILED.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">BSOD Boot</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">HAL_INITIALIZATION_FAILED</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="VCRUNTIME140.dll.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Missing DLL</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">VCRUNTIME140.dll</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="MSVCP140.dll.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Visual C++</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">MSVCP140.dll</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0xc000007b.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">App Start Error</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0xc000007b</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0xc0000005.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Access Violation</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0xc0000005</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="XINPUT1_3.dll.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">DirectX Error</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">XINPUT1_3.dll</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="D3DCOMPILER_43.dll.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">DirectX Compiler</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">D3DCOMPILER_43.dll</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0xc0000142.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">DLL Initialization</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0xc0000142</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x803F8001.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Store License</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x803F8001</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x80073CF9.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Store Download</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x80073CF9</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0xC004C003.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Key Blocked</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0xC004C003</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0xC004F211.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Hardware Change</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0xC004F211</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x803fa067.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Activation Valid</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x803fa067</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="DNS_PROBE_FINISHED_NXDOMAIN.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">DNS Error</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">DNS_PROBE_FINISHED_NXDOMAIN</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="ERR_CONNECTION_TIMED_OUT.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Browser Timeout</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">ERR_CONNECTION_TIMED_OUT</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="ERR_SSL_PROTOCOL_ERROR.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">SSL Handshake</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">ERR_SSL_PROTOCOL_ERROR</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x800704cf.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Network Adapter</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x800704cf</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x0000011b.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Printer Share</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x0000011b</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x00000709.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Printer Default</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x00000709</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x80040154.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Class Not Reg</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x80040154</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="0x80080005.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Server Fail</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">0x80080005</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="Taskbar Frozen.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">UI Glitch</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">Taskbar Frozen</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+            <a href="Black Screen Cursor.html" class="error-card bg-white p-8 rounded-[2rem] border border-slate-200 hover:border-indigo-500 hover:shadow-xl transition-all group block">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full uppercase">Display Error</span>
+                    <span class="text-slate-300 group-hover:text-indigo-500 transition">↗</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-800 group-hover:text-indigo-600 tracking-tight break-all">Black Screen Cursor</h3>
+                <p class="text-slate-400 text-xs mt-2 font-medium">Click to view repair steps</p>
+            </a>
+            
+        </div>
+        <div id="noResults" class="hidden text-center py-20 text-slate-400 font-bold text-xl">No error found.</div>
+    </main>
+
+    <footer class="bg-white border-t py-12 text-center text-slate-400 text-xs font-bold uppercase tracking-widest">
+        &copy; 2026 FIXERROR.IO
+    </footer>
+
+    <script>
+        function filterErrors() {
+            let input = document.getElementById('searchInput');
+            let filter = input.value.toUpperCase();
+            let grid = document.getElementById('errorGrid');
+            let cards = grid.getElementsByClassName('error-card');
+            let visibleCount = 0;
+            for (let i = 0; i < cards.length; i++) {
+                let h3 = cards[i].getElementsByTagName("h3")[0];
+                let txtValue = h3.textContent || h3.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) { cards[i].style.display = ""; visibleCount++; } else { cards[i].style.display = "none"; }
+            }
+            document.getElementById('noResults').style.display = visibleCount === 0 ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
