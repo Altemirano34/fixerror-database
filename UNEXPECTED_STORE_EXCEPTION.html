@@ -37,7 +37,7 @@
                 <div class="bg-indigo-600 p-10 text-white">
                     <span class="bg-white/20 text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-wider">Verified Fix</span>
                     <h1 class="text-4xl md:text-6xl font-black mt-4 mb-2 tracking-tighter break-all">UNEXPECTED_STORE_EXCEPTION</h1>
-                    <p class="text-indigo-100 opacity-90">BSOD Storage</p>
+                    <p class="text-indigo-100 opacity-90">Storage Driver Error</p>
                 </div>
                 
                 <div class="ad-slot bg-slate-100 h-24 m-6 rounded-xl flex items-center justify-center text-slate-400 text-xs border border-dashed border-slate-300">Google AdSense Banner</div>
@@ -45,14 +45,12 @@
                 <div class="p-8 md:p-10 pt-2">
                     <div class="bg-slate-50 border p-6 rounded-3xl mb-10">
                         <h4 class="font-extrabold text-slate-800 mb-2 uppercase text-xs tracking-widest">Diagnosis</h4>
-                        <p class="text-slate-600 leading-relaxed text-sm">DESC: The UNEXPECTED_STORE_EXCEPTION is a generic error in MySQL indicating an unexpected storage engine failure.
- 
- FIX: Check and repair the table with ALTER TABLE table_name ENGINE = InnoDB; If not working run CHECK TABLE table_name;</p>
+                        <p class="text-slate-600 leading-relaxed text-sm">An "UNEXPECTED_STORE_EXCEPTION" occurs when an unexpected issue arises while storing data, often related to disk errors or SQL constraints.</p>
                     </div>
 
                     <h3 class="text-xl font-extrabold mb-6 flex items-center text-slate-800 uppercase tracking-tight">Recommended Action</h3>
                     <div class="bg-slate-900 rounded-3xl p-6 flex flex-col md:flex-row justify-between items-center gap-4 shadow-xl">
-                        <code id="command" class="text-emerald-400 mono text-sm break-all w-full text-center md:text-left">sfc /scannow</code>
+                        <code id="command" class="text-emerald-400 mono text-sm break-all w-full text-center md:text-left">`chkdsk C:` (Run this command to check disk problems, replacing "C:" with the drive where the error occurs.)</code>
                         <button onclick="copyCommand()" class="bg-emerald-500 text-white px-6 py-2 rounded-xl text-xs font-bold shadow-lg hover:bg-emerald-400 active:scale-95 transition">COPY</button>
                     </div>
                 </div>
