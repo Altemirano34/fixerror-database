@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Fix 0x80070424 - FIXERROR.IO</title>
+    <title>Fix 0x80070467 - FIXERROR.IO</title>
 </head>
 <body class="bg-slate-50 text-slate-900">
     <nav class="bg-white border-b py-5 sticky top-0 z-50 px-6">
@@ -15,12 +15,18 @@
     </nav>
     <main class="max-w-4xl mx-auto py-12 px-6">
         <div class="bg-white rounded-[2.5rem] shadow-xl p-10 border border-slate-100">
-            <h1 class="text-4xl font-black mb-6 italic text-slate-800 tracking-tighter"> Fix 0x80070424 </h1>
-            <p class="text-slate-600 text-lg leading-relaxed mb-10 italic"> **System Error: 0x80070424** </p>
+            <h1 class="text-4xl font-black mb-6 italic text-slate-800 tracking-tighter"> Fix 0x80070467 </h1>
+            <p class="text-slate-600 text-lg leading-relaxed mb-10 italic"> **Error Message: 0x80070467** </p>
             
             <div class="bg-slate-900 p-8 rounded-3xl border-l-8 border-indigo-500">
                 <p class="text-indigo-400 text-[10px] uppercase font-bold mb-2">Fix Command:</p>
-                <code class="text-emerald-400 font-mono text-lg italic"> Error Code: 0x80070424 </code>
+                <code class="text-emerald-400 font-mono text-lg italic"> The Windows error code 0x80070467 typically indicates that the Windows API function CallNtPowerInformation is failing due to a lack of access rights, which may be caused by system file corruption or insufficient permissions.
+
+To resolve this issue, you can try to fix the registry using the following CMD command:
+```BASH
+regsvr32 /i /s cscript.exe
+```
+Please note: Use this command at your own risk. If you have any existing processes or background tasks running that involve registry modifications, it could potentially cause system instability or other unforeseen errors. Make sure to backup your system and/or registry before attempting any modifications. </code>
             </div>
             
             <div class="mt-12 pt-8 border-t grid grid-cols-1 md:grid-cols-2 gap-4">
